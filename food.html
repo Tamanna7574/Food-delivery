@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Delivery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-3 text-warning" href="#" style="text-shadow: 2px 2px 4px rgba(255, 165, 0, 0.5);">
+      🍴 Food <span class="text-danger">Now</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Full-Width Carousel -->
+<div id="fullCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#fullCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#fullCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#fullCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/photo-1550547660-d9450f859349.avif" class="d-block w-100" style="height: 70vh; object-fit: cover;" alt="Burger" />
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+        <h2 class="text-white">Burger</h2>
+        <p class="text-white">Juicy, cheesy, and grilled to perfection 🍔</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/istockphoto-610239866-612x612.jpg" class="d-block w-100" style="height: 70vh; object-fit: cover;" alt="Tacos" />
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+        <h2 class="text-white">Tacos</h2>
+        <p class="text-white">Delicious spicy tacos with flavorful fillings 🌮</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/premium_photo-1668146927669-f2edf6e86f6f.avif" class="d-block w-100" style="height: 70vh; object-fit: cover;" alt="Pizza" />
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+        <h2 class="text-white">Pizza</h2>
+        <p class="text-white">Melting cheese with fresh basil on a crispy crust 🍕</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#fullCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#fullCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Explore Menu Section -->
+<div class="py-5" id="menu" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/bg-food-pattern.jpg') no-repeat center center/cover;">
+  <div class="container text-light">
+    <h3 class="text-center mb-5 text-warning display-5 fw-bold">🍽️ Explore Our Menu</h3>
+    <div class="row g-4">
+      <!-- Menu Item 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="ratio ratio-4x3">
+            <img src="images/photo-1610440042657-612c34d95e9f.avif" class="img-fluid rounded-top" alt="Burger" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">🍔 Classic Burger</h5>
+            <p class="card-text text-muted">Juicy grilled patty with cheese, lettuce, and tomato.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">₹150</span>
+              <a href="#" class="btn btn-sm btn-danger">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="ratio ratio-4x3">
+            <img src="images/images (1).jpeg" class="img-fluid rounded-top" alt="Pizza" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">🍕 Margherita Pizza</h5>
+            <p class="card-text text-muted">Classic cheesy delight with fresh basil and tomato sauce.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">₹200</span>
+              <a href="#" class="btn btn-sm btn-success">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="ratio ratio-4x3">
+            <img src="images/Creamy-Mushroom-Pasta-square-FS-51-1.jpg" class="img-fluid rounded-top" alt="Pasta" style="object-fit: cover;">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">🍝 Creamy Pasta</h5>
+            <p class="card-text text-muted">Pasta tossed in rich white sauce with herbs and cheese.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold">₹180</span>
+              <a href="#" class="btn btn-sm btn-primary">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Order Form Section -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4" style="color: #FFD700;">🛵 Place Your Order</h2>
+  <div class="p-4 rounded-4 bg-light shadow">
+    <form action="" method="post">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone:</label>
+          <input type="tel" id="phone" class="form-control" name="phone" placeholder="Enter your phone" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="menu_item" class="form-label">Menu Item:</label>
+        <select class="form-control" id="menu_item" name="menu_item" required>
+          <option value="" disabled selected>Select a Menu Item</option>
+          <option value="burger">Burger</option>
+          <option value="pizza">Pizza</option>
+          <option value="pasta">Pasta</option>
+          <option value="fries">Fries</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Delivery Address:</label>
+        <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter delivery address" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-danger fw-bold px-4">Submit Order</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container text-center">
+    <p class="mb-0">© 2025 FoodNow. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Force Auto-Slide on Page Load -->
+<script>
+  const myCarousel = document.querySelector('#fullCarousel');
+  const carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 2000,
+    ride: 'carousel'
+  });
+</script>
+
+</body>
+</html>
